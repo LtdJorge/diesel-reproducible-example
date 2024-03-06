@@ -1,0 +1,11 @@
+[package]
+name = "diesel_reproducible_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.1.4", features = ["postgres", "chrono"] }
+diesel-async = { version = "0.4.1", features = ["postgres", "bb8"] }
+bb8 = "0.8.3"
+tokio = { version = "1.36.0", features = ["rt", "time", "net", "parking_lot", "macros", "tracing", "signal"] }
+anyhow = "1.0.80"
